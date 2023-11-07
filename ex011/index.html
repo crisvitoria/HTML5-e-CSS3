@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos difeerente, ou apenas aumenta ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <!--na tag source, ela escolherá a imagem de acordo com as informações passadas por meio dos atributos
+        media, srcset e type, conforme podemos notar nos exemplos abaixo
+        O navegador executara por ordem.-->
+        <!-- comentado para tentar fazer de outra forma
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">-->
+
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem flexível">
+    </picture>
+    <br>
+    <a href="d007.html">Clique aqui para acessoar o desafio</a>
+</body>
+</html>
