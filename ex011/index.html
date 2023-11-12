@@ -22,6 +22,18 @@
         <img src="imagens/foto-p.png" alt="Imagem flexível">
     </picture>
     <br>
+    <h1>Reproduzindo audio</h1>
+    <audio src="music/lembre-de-mim.mp3" controls autoplay loop></audio>
+    <br>
+    <h2>Colocando varios tipos de arquivo</h2>
+    <audio preload="metadata" autoplay>
+        <!--Carregaria na ordem, de cima para baixo.-->
+        <source src="music/lembre-de-mim.mp3" type="audio/mpeg"> <!--O MP3 é diferente o type-->
+        <source src="music/lembre-de-mim.ogg" type="audio/ogg">
+        <source src="music/lembre-de-mim.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="music/lembre-de-mim.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+
     <a href="d007.html">Clique aqui para acessoar o desafio</a>
 </body>
 </html>
